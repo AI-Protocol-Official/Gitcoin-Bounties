@@ -59,6 +59,13 @@ contract AccessControl {
 	 */
 	uint256 public constant ROLE_ACCESS_MANAGER = 0x8000000000000000000000000000000000000000000000000000000000000000;
 
+  /** No high severity issues found
+	  * Reviewed line-by-line and did not find any Selfdesdruct function
+		* There are no Race conditions and Reentrancy vulnerabilities detected
+		* Smart contracts contain only low severity issues
+		* Informal code reviewed by @dev Francis Isberto
+    */
+
 	/**
 	 * @dev Bitmask representing all the possible permissions (super admin role)
 	 * @dev Has all the bits are enabled (2^256 - 1 value)
